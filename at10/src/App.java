@@ -13,6 +13,9 @@ public class App {
         do{
             System.out.println("Insira a senha correta: ");
             entrada = scanner.nextLine();
+            if (!entrada.equals(senhaCorreta)) {
+                System.out.println("Senha incorreta! Tente novamente.");            
+            }
             }while (!entrada.equals(senhaCorreta));
         System.out.println("Parabens! Senha correta.");
         scanner.close();
